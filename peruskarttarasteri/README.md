@@ -3,8 +3,8 @@ Värikorjaus Maanmittauslaitoksen peruskartoille
 
 Värikorjaus Maanmittauslaitoksen [avoimena datana][1] julkaisemalle [peruskarttarasteriaineistolle][2].
 
-![Vanha][examples/old.png]
-![Uusi][examples/new.png]
+![Vanha](examples/old.png)
+![Uusi](examples/new.png)
 
 (sisältää Maanmittauslaitoksen peruskarttarasteriaineistoa 05/2012 – [lisenssi][3])
 
@@ -27,7 +27,9 @@ Esimerkki:
 Vaatimukset:
 
 - Python
-- [Python Imaging Library][http://www.pythonware.com/library/pil/] — asennus: easy_install PIL
+- [Python Imaging Library][4] — asennus: easy_install PIL
+
+[4]: http://www.pythonware.com/library/pil/
 
 
 Perusidea
