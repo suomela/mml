@@ -27,8 +27,11 @@ for i in range(C):
     else:
         assert v not in seen
         seen.add(v)
-        for j in range(3):
-            p[3*v+j] = PALETTE[i][j]
+        if p[3*v] == p[3*v+1] == p[3*v+2] == 0:
+            pass
+        else:
+            for j in range(3):
+                p[3*v+j] = PALETTE[i][j]
 
 im.putpalette(p)
 im.save(fout)
