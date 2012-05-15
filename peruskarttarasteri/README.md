@@ -3,14 +3,16 @@ Värikorjaus Maanmittauslaitoksen peruskartoille
 
 Värikorjaus Maanmittauslaitoksen [avoimena datana][1] julkaisemalle [peruskarttarasteriaineistolle][2].
 
-![Vanha](https://github.com/suomela/mml/raw/master/peruskarttarasteri/examples/old.png)
-![Uusi](https://github.com/suomela/mml/raw/master/peruskarttarasteri/examples/new.png)
+[<img width="400" height="400" src="https://github.com/suomela/mml/raw/master/peruskarttarasteri/examples/old.png" alt="Vanha" title="Vanha">][3]
+[<img width="400" height="400" src="https://github.com/suomela/mml/raw/master/peruskarttarasteri/examples/new.png" alt="Uusi" title="Uusi">][4]
 
-(sisältää Maanmittauslaitoksen peruskarttarasteriaineistoa 05/2012 – [lisenssi][3])
+(sisältää Maanmittauslaitoksen peruskarttarasteriaineistoa 05/2012 – [lisenssi][5])
 
 [1]: http://www.maanmittauslaitos.fi/avoindata/hankinta
 [2]: http://www.maanmittauslaitos.fi/digituotteet/peruskarttarasteri
-[3]: http://www.maanmittauslaitos.fi/avoindata_lisenssi_versio1_20120501
+[3]: https://github.com/suomela/mml/raw/master/peruskarttarasteri/examples/old.png
+[4]: https://github.com/suomela/mml/raw/master/peruskarttarasteri/examples/new.png
+[5]: http://www.maanmittauslaitos.fi/avoindata_lisenssi_versio1_20120501
 
 
 Käyttö
@@ -27,9 +29,9 @@ Esimerkki:
 Vaatimukset:
 
 - Python
-- [Python Imaging Library][4] — asennus: easy_install PIL
+- [Python Imaging Library][6] — asennus: easy_install PIL
 
-[4]: http://www.pythonware.com/library/pil/
+[6]: http://www.pythonware.com/library/pil/
 
 
 Perusidea
