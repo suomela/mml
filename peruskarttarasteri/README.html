@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Värikorjaus Maanmittauslaitoksen peruskartoille</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<h1>Värikorjaus Maanmittauslaitoksen peruskartoille</h1>
+
+<p>Värikorjaus Maanmittauslaitoksen
+    <a href="http://www.maanmittauslaitos.fi/avoindata/hankinta">avoimena datana</a> julkaisemalle
+    <a href="http://www.maanmittauslaitos.fi/digituotteet/peruskarttarasteri">peruskarttarasteriaineistolle</a>.</p>
+
+<p>
+    <a href="examples/old.png"><img width="400" height="400" src="examples/old.png" alt="Vanha" title="Vanha"></a>
+    <a href="examples/new.png"><img width="400" height="400" src="examples/new.png" alt="Uusi" title="Uusi"></a>
+</p>
+<p>(sisältää Maanmittauslaitoksen peruskarttarasteriaineistoa 05/2012 – <a href="http://www.maanmittauslaitos.fi/avoindata_lisenssi_versio1_20120501">lisenssi</a>)</p>
+
+<h2>Käyttö</h2>
+
+<p>Käyttö:</p>
+<pre>
+    ./set-palette <alkuperäinen> <uusi>
+</pre>
+
+<p>Esimerkki:</p>
+<pre>
+    ./set-palette UL4133L_RVK_1.tif UL4133L_RVK_1.png
+</pre>
+
+<p>Vaatimukset:</p>
+<ul>
+    <li>Python
+    <li><a href="http://www.pythonware.com/library/pil/">Python Imaging Library</a> — asennus: <code>easy_install PIL</code>
+</ul>
+
+<h2>Perusidea</h2>
+
+<p>Sekä PDF-muotoisten vektorikarttojen että TIFF-muotoisten
+rasterikarttojen vasemmassa ylänurkassa on hyvin pienellä
+merkittynä käytetty väripaletti (61 väriä).</p>
+
+<p>Esivalmisteluissa ladataan PDF-muotoinen näytekartta ja kaapataan
+siitä väripaletti talteen tiedostoon <code>palette.py</code>.</p>
+
+<p>Värikorjauksessa rasterikartan värit päivitetään rasterikuvan
+ylälaidasta löytyvän väripaletin ja tiedoston <code>palette.py</code> ohjaamana.
+Tässä voidaan hyödyntää 61-värisestä paletista vain 60 väriä, sillä
+rasterikonversiossa on kaksi väriä korvattu samalla.</p>
+
+<p>Jos haluat luoda tiedoston palette.py uusiksi, aja:</p>
+<pre>
+    make clean
+    make
+</pre>
+
+<p>Tällöin tarvitaan:</p>
+<ul>
+    <li>make
+    <li>wget
+    <li>ImageMagick
+    <li>Ghostscript
+    <li>Python
+    <li>Python Imaging Library
+</ul>
+
+<h2>Säätövaraa</h2>
+
+<p>Varsinaisesti väripaletin määrää se, miten Ghostscript konvertoi
+PDF-tiedoston värit PNG-kuvan väreiksi. Tähän voi vaikuttaa
+Ghostscriptin valitsimilla.</p>
+
+<p>Tiedostoa <code>palette.py</code> voi toki editoida käsinkin…</p>
