@@ -3,8 +3,8 @@ Värikorjaus Maanmittauslaitoksen peruskartoille
 
 Värikorjaus Maanmittauslaitoksen [avoimena datana][1] julkaisemalle [peruskarttarasteriaineistolle][2].
 
-![Vanha](examples/old.png)
-![Uusi](examples/new.png)
+![Vanha](https://github.com/suomela/mml/raw/master/peruskarttarasteri/examples/old.png)
+![Uusi](https://github.com/suomela/mml/raw/master/peruskarttarasteri/examples/new.png)
 
 (sisältää Maanmittauslaitoksen peruskarttarasteriaineistoa 05/2012 – [lisenssi][3])
 
