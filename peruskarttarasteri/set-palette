@@ -2,12 +2,11 @@
 
 import Image
 import sys
+import palette
 
 C = 61
 
 dummy, fin, fout = sys.argv
-
-execfile("palette.py")
 
 im = Image.open(fin)
 p = im.getpalette()
@@ -31,7 +30,7 @@ for i in range(C):
             pass
         else:
             for j in range(3):
-                p[3*v+j] = PALETTE[i][j]
+                p[3*v+j] = palette.PALETTE[i][j]
 
 im.putpalette(p)
 im.save(fout)
